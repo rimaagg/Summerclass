@@ -1,0 +1,17 @@
+{%load static%}
+<nav class="navbar-expand-lg navbar-dark bag-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home' %}">
+      {% if site_setting.logo %}
+      <img src="{{ site_setting.logo.url }}" alt="Logo"
+      style="max-height: 50px; width: auto;" class="d-inline-block align-middle">
+      {%endif%}
+    </a>
+    <button
+     class="navbar-toggler"
+     type="button"
+     data-bs-toggl="collapse"
+     data-bs-target="#navbarNav"
+    >
+      <span class="navbar-toggler-icon"></span>
+  </button>
